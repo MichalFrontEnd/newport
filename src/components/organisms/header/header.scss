@@ -24,7 +24,6 @@
   }
 
   &__heading {
-    // padding: 5%;
     grid-row: 1;
     align-self: end;
     margin-left: 10%;
@@ -57,16 +56,13 @@
       inset: 0;
       background: linear-gradient(
         -45deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(93, 93, 93, 0.8),
-        rgba(255, 255, 255, 0.4)
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.4),
+        rgba(255, 255, 255, 0.6)
       );
       mix-blend-mode: hard-light;
-      // background-color: black;
-      // opacity: 0.2;
     }
     &-image {
-      object-fit: cover;
       object-position: 50% 75%;
     }
   }

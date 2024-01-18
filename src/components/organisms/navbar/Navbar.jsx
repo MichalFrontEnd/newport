@@ -1,42 +1,44 @@
-// import * as React from "react";
-// import { NavLink } from "react-router-dom";
+import * as React from "react";
+import { Link } from "react-scroll";
 
-// const routes = [
-//   {
-//     path: "/",
-//     exact: true,
-//     component: "Home",
-//     navbar: () => <div>Home</div>,
-//   },
-//   {
-//     path: "/projects",
-//     exact: true,
-//     component: "Projects",
-//     navbar: () => <div>Projects</div>,
-//   },
-//   {
-//     path: "/about",
-//     exact: true,
-//     component: "About",
-//     navbar: () => <div>About</div>,
-//   },
-// ];
+export const Navbar = () => {
+  return (
+    <section className="container">
+      <navbar className="navbar">
+        <ul className="navbar__list">
+          <Link
+            to="about"
+            smooth={"easeInOutQuad"}
+            duration={500}
+            activeClass="active"
+            spy={true}
+            className="navbar__link"
+          >
+            About
+          </Link>
 
-// export function Navbar() {
-//   return (
-//     <navbar>
-//       {routes.map((route, i) => (
-//         <NavLink
-//           key={i}
-//           to={route.path}
-//           exact={route.exact}
-//           className="navlink"
-//         >
-//           {route.component}
-//         </NavLink>
-//       ))}
-//     </navbar>
-//   );
-// }
+          <Link
+            to="projects"
+            smooth={"easeInOutQuad"}
+            duration={500}
+            className="navbar__link"
+            spy={true}
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact"
+            smooth={"easeInOutQuad"}
+            duration={500}
+            className="navbar__link"
+            spy={true}
+          >
+            Contact
+          </Link>
+        </ul>
+      </navbar>
+    </section>
+  );
+};
 
-// export default Navbar;
+export default Navbar;

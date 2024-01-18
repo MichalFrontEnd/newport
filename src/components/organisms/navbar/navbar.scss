@@ -1,5 +1,14 @@
-@use "./navbar.vars.scss";
-@use "../../../styles/globals" as *;
+@use "./navbar.vars.scss" as *;
 
 .navbar {
+  border: cyan 3px solid;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: white;
+  }
 }
