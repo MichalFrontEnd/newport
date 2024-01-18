@@ -1,0 +1,40 @@
+body,
+main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100%;
+  //todo: add media query for dark and light
+  //todo: add bgc
+  background-color: var(--text);
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+//TO-DO: Move to a different file. This is not reset
+.container {
+  padding: 5%;
+  margin: 0;
+  border: purple 3px solid;
+
+  &--reverse {
+    background-color: var(--aluminium);
+  }
+  &--light {
+    background-color: var(--light);
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.25ch;
+  line-height: 150%;
+}
