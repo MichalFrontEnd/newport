@@ -2,23 +2,13 @@
 
 /* Markup */
 .arrow-button {
-  //   height: 15rem;
   color: white;
   text-align: center;
-  //   position: relative;
-
-  &__content {
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-  }
-
-  /* Arrow & Hover Animation */
 
   #more-arrows {
     width: 75px;
-    height: 65px;
+    height: auto;
+    // position: relative;
 
     &:hover {
       polygon {
@@ -26,11 +16,11 @@
         transition: all 0.2s ease-out;
 
         &.arrow-bottom {
-          transform: translateY(-18px);
+          transform: translateY(5px);
         }
 
         &.arrow-top {
-          transform: translateY(18px);
+          transform: translateY(-1px);
         }
       }
     }
@@ -46,6 +36,11 @@
 
     &.arrow-top {
       opacity: 0.5;
+      transform: translateY(18px);
+    }
+
+    &.arrow-bottom {
+      transform: translateY(-18px);
     }
   }
 }
