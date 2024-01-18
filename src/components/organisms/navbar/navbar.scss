@@ -1,11 +1,16 @@
 @use "./navbar.vars.scss" as *;
 
 .navbar {
-  border: cyan 3px solid;
+  height: fit-content;
+
+  &__container {
+    padding: 3% 5%;
+  }
 
   &__list {
     display: flex;
     justify-content: space-between;
+    list-style: none;
   }
 
   &__link {

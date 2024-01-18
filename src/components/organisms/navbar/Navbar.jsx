@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const Navbar = () => {
   return (
-    <section className="container">
+    <section className="container navbar__container">
       <navbar className="navbar">
         <ul className="navbar__list">
           <Link

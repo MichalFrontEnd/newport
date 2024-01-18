@@ -1,2 +1,5 @@
-@use "./styles/globals/index.scss" as globals;
-@use "./components/organisms/index.scss" as *;
+@use "./styles/globals/index.scss";
+
+@use "./components/atoms";
+@use "./components/molecules";
+@use "./components/organisms";

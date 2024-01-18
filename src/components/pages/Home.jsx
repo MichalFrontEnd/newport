@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-scroll";
 
 import { Header } from "../organisms/header";
 import { Navbar } from "../organisms/navbar";
@@ -16,7 +15,7 @@ export const Home = () => {
         <meta name="description" content="Your brief portfolio description" />
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
-      {/* <Header /> */}
+      <Header />
       <Navbar />
 
       <About />

@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Image } from "../../molecules/";
+import { Image } from "../../molecules";
+import { ArrowButton } from "../../atoms";
 
 export const Header = () => {
   return (
@@ -14,6 +15,7 @@ export const Header = () => {
             className="header__image-image"
           />
         </div>
+        <ArrowButton className="header__button" />
       </div>
     </div>
   );
