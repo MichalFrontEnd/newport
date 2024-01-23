@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Image } from "../../molecules";
 import { ArrowButton } from "../../atoms";
+import { Link } from "react-scroll";
 
 export const Header = () => {
   return (
@@ -15,7 +16,16 @@ export const Header = () => {
             className="header__image-image"
           />
         </div>
-        <ArrowButton className="header__button" />
+        <Link>
+          <ArrowButton
+            className="header__button"
+            to="about"
+            smooth={"easeInOutQuad"}
+            duration={500}
+            activeClass="active"
+            spy={true}
+          />
+        </Link>
       </div>
     </div>
   );
