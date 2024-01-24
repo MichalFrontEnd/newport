@@ -3,7 +3,11 @@ import { Image } from "../molecules";
 
 export const About = () => {
   return (
-    <section className="about container container--light" id="about">
+    <section
+      className="about container container--light"
+      id="about"
+      aria-labelledby="about"
+    >
       <div className="about__container">
         <div className="about__image">
           <Image
