@@ -8,13 +8,13 @@ import { Contact } from "./Contact";
 
 export const Home = () => {
   return (
-    <div className="home-container">
+    <main role="main">
       <Helmet>
         <title>Michal FrontEnd Developer</title>
         <meta name="description" content="Your brief portfolio description" />
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
-      <main aria-labelledby="home">
+      <div className="home-container" aria-labelledby="home">
         <Header />
         <Navbar />
 
@@ -22,8 +22,8 @@ export const Home = () => {
         <Projects />
         <Contact />
         {/* Add Footer here */}
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 
