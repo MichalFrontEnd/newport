@@ -1,8 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import { Header } from "../organisms/header";
-import { Navbar } from "../organisms/navbar";
+import { Header, Navbar } from "../organisms";
 import { About } from "./About";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
