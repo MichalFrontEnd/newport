@@ -8,29 +8,35 @@ import {
 
 export function IconLinkList() {
   return (
-    <div className="icon-link-list">
-      <Link
-        href="http://www.linkedin.com/in/michal-front"
-        title="LinkedIn"
-        className="icon-link-list__list-item"
-      >
-        <AiOutlineLinkedin />
-      </Link>
-      <Link
-        href="http://www.github.com/MichalFrontEnd"
-        title="Github"
-        className="icon-link-list__list-item"
-      >
-        <AiOutlineGithub />
-      </Link>
-      <Link
-        href="mailto:michal.front@outlook.com"
-        title="Email"
-        className="icon-link-list__list-item"
-      >
-        <AiOutlineMail />
-      </Link>
-    </div>
+    <ul className="icon-link-list">
+      <li className="icon-link-list__list-item" role="presentation">
+        <Link
+          href="http://www.linkedin.com/in/michal-front"
+          title="LinkedIn"
+          className="icon-link-list__link"
+        >
+          <AiOutlineLinkedin />
+        </Link>
+      </li>
+      <li className="icon-link-list__list-item" role="presentation">
+        <Link
+          href="http://www.github.com/MichalFrontEnd"
+          title="Github"
+          className="icon-link-list__link"
+        >
+          <AiOutlineGithub />
+        </Link>
+      </li>
+      <li className="icon-link-list__list-item" role="presentation">
+        <Link
+          href="mailto:michal.front@outlook.com"
+          title="Email"
+          className="icon-link-list__link"
+        >
+          <AiOutlineMail />
+        </Link>
+      </li>
+    </ul>
   );
 }
 
