@@ -1,1 +1,1 @@
-export { LinkDefault } from "./Link.jsx";
+export { Link } from "./Link.jsx";
