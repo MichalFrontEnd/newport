@@ -15,8 +15,8 @@ export const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
       <div className="home-container" aria-labelledby="home">
-        {/* <Header />
-        <Navbar /> */}
+        <Header />
+        <Navbar />
 
         {/* <About />
         <Projects /> */}
