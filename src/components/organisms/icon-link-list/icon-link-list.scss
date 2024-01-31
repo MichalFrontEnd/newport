@@ -7,7 +7,7 @@
 
   &__link {
     svg {
-      @include square-size(1.5rem);
+      @include square-size(2rem);
       stroke: var(--text);
       fill: var(--text);
     }

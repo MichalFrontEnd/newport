@@ -18,8 +18,8 @@ export const Home = () => {
         <Header />
         <Navbar />
 
-        {/* <About />
-        <Projects /> */}
+        <About />
+        <Projects />
         <Contact />
         {/* Add Footer here */}
       </div>
