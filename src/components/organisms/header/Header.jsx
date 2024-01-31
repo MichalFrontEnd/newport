@@ -20,15 +20,14 @@ export const Header = () => {
           className="header__image-image"
         />
       </div>
-      <Link>
-        <ArrowButton
-          className="header__button"
-          to="about"
-          smooth={"easeInOutQuad"}
-          duration={500}
-          activeClass="active"
-          spy={true}
-        />
+      <Link
+        to="about"
+        smooth={"easeInOutQuad"}
+        duration={500}
+        activeClass="active"
+        spy={true}
+      >
+        <ArrowButton className="header__button" />
       </Link>
     </div>
   );
