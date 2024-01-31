@@ -1,6 +1,7 @@
 import React from "react";
+import { IconLinkList } from "../organisms";
 
-export const Contact = () => {
+export function Contact() {
   return (
     <section
       className="contact container container--reverse"
@@ -9,10 +10,11 @@ export const Contact = () => {
     >
       <div className="contact__container">
         <h2 className="contact__header">Contact</h2>
-        <div className="contact__icons">Icons placeholder</div>
+
+        <IconLinkList />
       </div>
     </section>
   );
-};
+}
 
 export default Contact;

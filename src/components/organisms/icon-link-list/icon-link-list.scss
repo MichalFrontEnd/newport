@@ -1,0 +1,21 @@
+@use "./icon-link-list.vars.scss" as *;
+
+.icon-link-list {
+  @include flex-inline(space-evenly);
+  width: 70%;
+  transform: translateX(25%);
+
+  &__link {
+    svg {
+      @include square-size(1.5rem);
+      stroke: var(--text);
+      fill: var(--text);
+    }
+
+    svg:hover,
+    svg:active {
+      stroke: var(--light);
+      fill: var(--light);
+    }
+  }
+}

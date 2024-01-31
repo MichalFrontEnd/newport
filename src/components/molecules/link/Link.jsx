@@ -4,7 +4,6 @@ import * as React from "react";
 // export interface ILinkDefault {
 //   title?: string;
 //   href?: string;
-//   target?: string;
 //   className?: string;
 //   iconLeft?: string;
 //   iconRight?: string;
@@ -14,31 +13,18 @@ import * as React from "react";
 //   name?: string;
 // }
 
-export function LinkDefault({
-  title,
-  className,
-  href,
-  target,
-  iconLeft,
-  attributes,
-}) {
+export function Link({ title, className, href, attributes, children }) {
   return (
     <a
       href={href}
       title={title}
-      className={classNames(`link ${className}`)}
-      target={target}
+      className={className ? classNames(`link ${className}`) : null}
+      aria-label={`Michal Front - ${title}`}
       {...attributes}
     >
-      {iconLeft ? (
-        // <Icon
-        //   id={iconLeft}
-        //   className=`link__icon${classSvgLeft ? " " + classSvgLeft : ""}`)}
-        // />
-        <div>icon PH</div>
-      ) : null}
+      {children ? children : null}
     </a>
   );
 }
 
-export default LinkDefault;
+export default Link;
