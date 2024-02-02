@@ -1,4 +1,31 @@
 @use "./info-card.vars.scss" as *;
 
 .info-card {
+  border: var(--text) 2px solid;
+  border-radius: 7px;
+}
+
+.about-info-card {
+  &__image {
+    object-position: 50% 25%;
+    // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0 50%);
+    border-radius: 50%;
+    z-index: 10;
+  }
+  &__image-container {
+    position: relative;
+    aspect-ratio: 1;
+    width: 15rem;
+    isolation: isolate;
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -1% -3%;
+      background-color: var(--paper);
+      z-index: -1;
+      border-radius: 50%;
+      height: 105%;
+      aspect-ratio: 1;
+    }
+  }
 }

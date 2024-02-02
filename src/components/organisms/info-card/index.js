@@ -1,1 +1,1 @@
-export { InfoCard } from "./InfoCard.jsx";
+export { InfoCard, AboutInfoCard } from "./InfoCard.jsx";
