@@ -12,8 +12,7 @@
       fill: var(--text);
     }
 
-    svg:hover,
-    svg:active {
+    svg:is(:hover, :active) {
       stroke: var(--light);
       fill: var(--light);
     }

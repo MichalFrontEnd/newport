@@ -10,7 +10,6 @@ export function Contact() {
     >
       <div className="contact__container">
         <h2 className="contact__header">Contact</h2>
-
         <IconLinkList />
       </div>
     </section>
