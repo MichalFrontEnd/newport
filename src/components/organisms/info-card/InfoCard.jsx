@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image } from "../../molecules";
 import { Link } from "react-scroll";
-const src = "/assets/images/mfront.png";
+const src = "/assets/images/mfrontc.png";
 
 export const InfoCard = ({ children }) => {
   return (
