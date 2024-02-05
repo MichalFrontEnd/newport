@@ -2,9 +2,12 @@
 
 .info-card {
   @include flex-column(center);
+  border: var(--text) 3px solid;
+  border-radius: 7px;
 }
 
 .about-info-card {
+  border: none;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
@@ -13,10 +16,9 @@
   &__image {
     object-position: center;
     object-fit: cover;
-
     aspect-ratio: 1;
     width: 15rem;
-
+    //mask to create rhombus shape & webkit
     -webkit-mask-image: url("../../atoms/rhombus/rhombus-svgrepo-com.svg");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
@@ -52,7 +54,7 @@
   &__info {
     grid-row: 1/1;
     grid-column: 1/1;
-    border: var(--text) 2px solid;
+    border: var(--text) 3px solid;
     border-radius: 7px;
     padding: 7rem 3rem 2rem;
     position: relative;
