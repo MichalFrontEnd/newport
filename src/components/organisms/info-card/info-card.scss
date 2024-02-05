@@ -61,12 +61,15 @@
 
     p {
       text-wrap: balance;
-      text-align: left;
-    }
 
-    .center {
-      margin-block-start: 3rem;
-      text-align: center;
+      &:last-child {
+        margin-block-start: 3rem;
+      }
+
+      &:last-child::before,
+      &:last-child::after {
+        content: " ~ ";
+      }
     }
   }
 }
