@@ -1,0 +1,15 @@
+@use "./projects-card.vars.scss" as *;
+
+.projects-card {
+  @include flex-column(center);
+  border: var(--text) 3px solid;
+  border-radius: 7px;
+
+  &__heading {
+    text-transform: uppercase;
+  }
+
+  &__sub-heading {
+    color: var(--paper);
+  }
+}
