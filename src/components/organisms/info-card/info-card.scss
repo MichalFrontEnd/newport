@@ -1,0 +1,70 @@
+@use "./info-card.vars.scss" as *;
+
+.info-card {
+  @include flex-column(center);
+}
+
+.about-info-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  padding: 7rem 0 0 0;
+
+  &__image {
+    object-position: center;
+    object-fit: cover;
+
+    aspect-ratio: 1;
+    width: 15rem;
+
+    -webkit-mask-image: url("../../atoms/rhombus/rhombus-svgrepo-com.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    mask-image: url("../../atoms/rhombus/rhombus-svgrepo-com.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+  }
+  &__image-container {
+    position: relative;
+    isolation: isolate;
+    width: fit-content;
+
+    grid-row: 1/1;
+    grid-column: 1/1;
+    place-self: start center;
+    margin-block-start: -7.5rem;
+    z-index: 1;
+
+    // &::after,
+    // ::before {
+    //   content: "";
+    //   height: 10%;
+    //   position: absolute;
+    //   inset: 0;
+    //   background-color: var(--paper);
+    //   z-index: -1;
+    //   display: block;
+    // }
+  }
+
+  &__info {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    border: var(--text) 2px solid;
+    border-radius: 7px;
+    padding: 7rem 3rem 2rem;
+    position: relative;
+
+    p {
+      text-wrap: balance;
+      text-align: left;
+    }
+
+    .center {
+      margin-block-start: 3rem;
+      text-align: center;
+    }
+  }
+}

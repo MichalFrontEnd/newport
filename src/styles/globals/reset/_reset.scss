@@ -19,6 +19,7 @@ main {
   padding: 5%;
   margin: 0;
   border: purple 3px solid;
+  height: min-content;
 
   &--reverse {
     background-color: var(--aluminium);
@@ -40,6 +41,10 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.25ch;
   line-height: 150%;
+}
+
+h2 {
+  text-align: center;
 }
 
 // lists

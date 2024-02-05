@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center;
 }
+@mixin flex-column($justify) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: center;
+}
 
 @mixin flex-inline($justify) {
   display: inline-flex;
