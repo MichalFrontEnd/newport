@@ -1,9 +1,8 @@
 @use "./projects-card.vars.scss" as *;
 
 .projects-card {
-  @include flex-column(center);
-  border: var(--text) 3px solid;
-  border-radius: 7px;
+  @include flex-column(flex-start);
+  height: 15rem;
 
   &__heading {
     text-transform: uppercase;
