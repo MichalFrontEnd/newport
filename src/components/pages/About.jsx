@@ -8,9 +8,7 @@ export const About = () => {
       id="about"
       aria-labelledby="about"
     >
-      <div className="about__container">
-        <AboutInfoCard />
-      </div>
+      <AboutInfoCard />
     </section>
   );
 };

@@ -1,11 +1,19 @@
 import * as React from "react";
 import { Image } from "../../molecules";
+import classNames from "classnames";
 import { Link } from "react-scroll";
 const src = "/assets/images/mfrontc.png";
 
-export const InfoCard = ({ children }) => {
+export const InfoCard = ({ children, className }) => {
+  const additionalClassNames = {};
+  if (className !== undefined) {
+    additionalClassNames[className] = true;
+  }
   return (
-    <div className="info-card" aria-labelledby="info-card">
+    <div
+      className={classNames("info-card", additionalClassNames)}
+      aria-labelledby="info-card"
+    >
       {children && children}
     </div>
   );
@@ -13,7 +21,7 @@ export const InfoCard = ({ children }) => {
 
 export const AboutInfoCard = () => {
   return (
-    <InfoCard>
+    <InfoCard className="about-info-card">
       <div className="about-info-card__image-container">
         <Image
           src={src}
@@ -24,13 +32,22 @@ export const AboutInfoCard = () => {
 
       <div className="about-info-card__info">
         <h2 className="about-info-card__header">This is Me</h2>
-        <p className="about-info-card__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos
-          placeat harum dicta consequatur dolor, ex omnis et nihil ducimus
-          molestiae autem fugiat iure molestias similique doloremque vitae
-          quidem nisi?
-        </p>
-        n
+        <div className="about-info-card__content">
+          <p>
+            A frontend developer with a strong affinity to the Front-End side of
+            things, a keen eye for the tiniest of details and an appreciation of
+            clean reusable code. I currently work in JavaScript, focusing mainly
+            on React. While always striving to learn and implement new things, I
+            also love to dive deeper into the nitty-gritty of my current stack.
+          </p>
+          <p>
+            In my spare time I enjoy swing dancing, tabletop and boardgames,
+            sewing and embroidery.
+          </p>
+          <p className="center">
+            <em>Available for work.</em>
+          </p>
+        </div>
       </div>
     </InfoCard>
   );
