@@ -34,11 +34,13 @@ export const AboutInfoCard = () => {
         <h2 className="about-info-card__header">This is Me</h2>
         <div className="about-info-card__content">
           <p>
-            A frontend developer with a strong affinity to the Front-End side of
-            things, a keen eye for the tiniest of details and an appreciation of
-            clean reusable code. I currently work in JavaScript, focusing mainly
-            on React. While always striving to learn and implement new things, I
-            also love to dive deeper into the nitty-gritty of my current stack.
+            A fullstack developer by training with a strong affinity to the
+            Front-End side of things, a keen eye for the tiniest of details and
+            an appreciation of clean reusable code. I currently work in
+            JavaScript, focusing mainly on React, though I do enjoy creating my
+            own UIs. <br />
+            While always striving to learn and implement new things, I also love
+            to dive deeper into the nitty-gritty of my current stack.
           </p>
           <p>
             In my spare time I enjoy swing dancing, tabletop and boardgames,
