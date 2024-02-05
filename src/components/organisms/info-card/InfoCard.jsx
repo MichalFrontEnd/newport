@@ -46,8 +46,8 @@ export const AboutInfoCard = () => {
             In my spare time I enjoy swing dancing, tabletop and boardgames,
             sewing and embroidery.
           </p>
-          <p className="center">
-            <em>Available for work.</em>
+          <p className="align-center">
+            <em>Available for work</em>
           </p>
         </div>
       </div>
