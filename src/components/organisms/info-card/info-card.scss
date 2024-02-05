@@ -61,14 +61,10 @@
 
     p {
       text-wrap: balance;
+      text-align: left;
 
       &:last-child {
         margin-block-start: 3rem;
-      }
-
-      &:last-child::before,
-      &:last-child::after {
-        content: " ~ ";
       }
     }
   }
