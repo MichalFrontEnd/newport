@@ -14,20 +14,6 @@ main {
   box-sizing: border-box;
 }
 
-//TO-DO: Move to a different file. This is not reset
-.container {
-  padding: 5%;
-  margin: 0;
-  border: purple 3px solid;
-  height: min-content;
-
-  &--reverse {
-    background-color: var(--aluminium);
-  }
-  &--light {
-    background-color: var(--light);
-  }
-}
 
 img {
   height: 100%;
@@ -45,6 +31,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 h1 {
   text-transform: uppercase;
   letter-spacing: 0.25ch;

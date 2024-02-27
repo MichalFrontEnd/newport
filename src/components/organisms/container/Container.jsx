@@ -9,12 +9,9 @@ export const Container = ({colour, id, children}) => {
   if (id) {
     additionalClassNames[`container--${id}`] = true;
   }
-  console.log('additionalClassNames: ', additionalClassNames);
   return (
     <section
-      // className="contact container container--reverse"
       className={classNames("container", additionalClassNames)}
-
       id={id}
       aria-labelledby={id}
     >

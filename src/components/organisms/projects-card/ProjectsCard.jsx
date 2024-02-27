@@ -16,7 +16,6 @@ export const ProjectsCard = ({ children, type, className }) => {
     >
       <h2 className="projects-card__heading">Projects</h2>
       <h3 className="projects-card__sub-heading">{type}</h3>
-
       {children && children}
     </div>
   );
