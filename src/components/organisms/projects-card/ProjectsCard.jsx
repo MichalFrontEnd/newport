@@ -16,7 +16,6 @@ export const ProjectsCard = ({ type, className }) => {
     >
       <h2 className="projects-card__heading">Projects</h2>
       <h3 className="projects-card__sub-heading">{type}</h3>
-
       {type === "Professional" ? (
         <div className="projects-card__slider">Prof Slider placeholder</div>
       ) : (

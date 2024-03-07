@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import * as React from "react";
 
 // export interface ILinkDefault {
@@ -18,7 +17,7 @@ export function Link({ title, className, href, attributes, children }) {
     <a
       href={href}
       title={title}
-      className={className ? classNames(`link ${className}`) : null}
+      className={className ? `link ${className}` : "link"}
       aria-label={`Michal Front - ${title}`}
       {...attributes}
     >

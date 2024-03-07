@@ -17,7 +17,7 @@ export const Home = () => {
       <div className="home-container" aria-labelledby="home">
         <Header />
         <Navbar />
-
+        {/* site sections */}
         <About />
         <Projects />
         <Contact />

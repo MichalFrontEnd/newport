@@ -1,15 +1,11 @@
 import React from "react";
-import { AboutInfoCard } from "../organisms";
+import { AboutInfoCard, Container } from "../organisms";
 
 export const About = () => {
   return (
-    <section
-      className="about container container--light"
-      id="about"
-      aria-labelledby="about"
-    >
+    <Container colour="base" id="about">
       <AboutInfoCard />
-    </section>
+    </Container>
   );
 };
 
