@@ -4,7 +4,7 @@ import classNames from "classnames";
 // import { Link } from "react-scroll";
 // const src = "/assets/images/mfrontc.png";
 
-export const ProjectsCard = ({ children, type, className }) => {
+export const ProjectsCard = ({ type, className }) => {
   const additionalClassNames = {};
   if (className !== undefined) {
     additionalClassNames[className] = true;
@@ -16,7 +16,11 @@ export const ProjectsCard = ({ children, type, className }) => {
     >
       <h2 className="projects-card__heading">Projects</h2>
       <h3 className="projects-card__sub-heading">{type}</h3>
-      {children && children}
+      {type === "Professional" ? (
+        <div className="projects-card__slider">Prof Slider placeholder</div>
+      ) : (
+        <div className="projects-card__slider">PrivateSlider placeholder</div>
+      )}
     </div>
   );
 };
