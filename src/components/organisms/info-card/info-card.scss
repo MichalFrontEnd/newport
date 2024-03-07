@@ -2,8 +2,6 @@
 
 .info-card {
   @include flex-column(center);
-  border: var(--text) 3px solid;
-  border-radius: 7px;
 }
 
 .about-info-card {
@@ -65,7 +63,6 @@
       &:last-child {
         margin-block-start: 3rem;
       }
-
       &:last-child::before,
       &:last-child::after {
         content: " ~ ";

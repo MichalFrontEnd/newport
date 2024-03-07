@@ -1,0 +1,14 @@
+@use "./container.vars.scss";
+
+.container {
+  padding: 5%;
+  margin: 0;
+  height: min-content;
+
+  &--reverse {
+    background-color: var(--aluminium);
+  }
+  &--base {
+    background-color: var(--light);
+  }
+}
