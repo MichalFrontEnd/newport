@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <section className="container navbar__container">
       <nav className="navbar">
-        <Flex className="navbar__list" role="navigation-list">
+        <Flex className="navbar__list" role="navigation-list" justify="flex-end" gap="lg">
           <Link
             to="about"
             smooth={"easeInOutQuad"}
