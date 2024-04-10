@@ -13,8 +13,8 @@
     }
 
     svg:is(:hover, :active) {
-      stroke: var(--light);
-      fill: var(--light);
+      stroke: var(--contrast);
+      fill: var(--contrast);
     }
   }
 }
